@@ -2,6 +2,9 @@ import React, {useState} from "react"
 import MovieCard from "./MovieCard"
 import Button from "./components/styles/Button.styled"
 import Form from "./components/styles/Form.styled"
+import Input from "./components/styles/Input.styled"
+import Label from "./components/styles/Label.styled"
+import CardList from "./components/styles/CardList.styled"
 
 export default function SearchMovies() {
 
@@ -24,8 +27,8 @@ export default function SearchMovies() {
     return (
         <>
             <Form onSubmit={searchMovies}>
-                <label htmlFor="query" className="label">Movie Name</label>
-                <input 
+                <Label htmlFor="query">Movie Name:</Label>
+                <Input 
                     type="text" 
                     name="query" 
                     placeholder="e.g. Casablanca" 
@@ -34,11 +37,11 @@ export default function SearchMovies() {
                 />
                 <Button type="submit">Search</Button>
             </Form>
-            <div className="card-list">
+            <CardList>
                 {movies.filter(movie => movie.poster_path).map(movie => (
                     <MovieCard movie={movie} key={movie.id}/>
             )
-                )}</div>
+                )}</CardList>
         </>
     )
 }

@@ -1,6 +1,4 @@
 import React from 'react';
-import './index.css';
-// import { ThemeProvider } from 'styled-components';
 import SearchMovies from './SearchMovies';
 import { Container } from './components/styles/Container.styled';
 import GlobalStyles from './components/styles/Global';

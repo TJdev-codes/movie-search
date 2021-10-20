@@ -12,12 +12,13 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     background-color: #698996;
     }
-
-    p {
-    font-size: 2rem;
+    
+    h3 {
+    margin-bottom: 0.5rem;
+    font-size: 3.2rem;
     }
 
-    small {
+    p {
     font-size: 1.5rem;
     }
 
