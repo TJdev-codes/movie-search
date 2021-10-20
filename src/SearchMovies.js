@@ -11,7 +11,7 @@ export default function SearchMovies() {
     const searchMovies = async (e) => {
         e.preventDefault()
     
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=520b68b845c5bf623749ce8cf9bbe8db&language=en-US&query=${query}&page=1&include_adult=false`
+    const url = `https://api.themoviedb.org/3/search/movie?api_key={yourkeyhere}&language=en-US&query=${query}&page=1&include_adult=false`
     try {
         const res = await fetch(url)
         const data  = await res.json()
