@@ -6,22 +6,31 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     }
 
-    /* html { 
-    font-size: 10px;
-    }*/
-
     body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #698996;
     }
 
     p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     }
 
     small {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     }
+
+    @media (min-width: 768px) {
+        form {
+            grid-template-columns: auto 1fr auto;
+            grid-gap: 1rem;
+            align-items: center;
+  }
+        input {
+            margin-bottom: 0;
+  }
+}
+
 `
 export default GlobalStyles
